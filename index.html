@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pranav Lakhe — AI/ML Engineer & Full-Stack Developer</title>
+  <meta name="description"
+    content="Portfolio of Pranav Lakhe, 3rd-year CS & IT student at Symbiosis Institute of Technology Nagpur. Specializing in AI/ML, Agentic AI, Computer Vision, and Full-Stack Engineering.">
+  <meta name="keywords"
+    content="Pranav Lakhe, AI ML Engineer, Full Stack Developer, SIT Nagpur, Symbiosis, Border Surveillance AI, SIH 2026, Agentic AI">
+  <meta name="author" content="Pranav Lakhe">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Pranav Lakhe — Portfolio">
+  <meta property="og:description"
+    content="AI/ML Engineer, Full-Stack Developer, and B.Tech CS & IT student at SIT Nagpur. Explore my projects, research, and experience.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: DM Serif Display & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Live Aesthetic Ambient Background -->
+  <div class="ambient-canvas-wrap" id="ambientBg" aria-hidden="true">
+    <div class="aura-orb aura-1"></div>
+    <div class="aura-orb aura-2"></div>
+    <div class="aura-orb aura-3"></div>
+    <div class="aura-cursor" id="auraCursor"></div>
+    <div class="ambient-mesh"></div>
+  </div>
+
+  <!-- Floating Navigation Bar -->
+  <header class="nav-wrap">
+    <nav class="pill" aria-label="Main Navigation">
+      <a href="#home" class="logo">Pranav</a>
+
+      <ul class="links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="icons">
+        <a class="icon-btn" href="https://github.com/Pranavv28" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub Profile" title="GitHub (@Pranavv28)">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path
+              d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z" />
+          </svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/pranav-lakhe-696044373/?isSelfProfile=true"
+          target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path
+              d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z" />
+          </svg>
+        </a>
+        <a class="icon-btn" href="mailto:pranavlakhe1@gmail.com" aria-label="Send Email"
+          title="Email (pranavlakhe1@gmail.com)">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path d="m3 7 9 6 9-6" />
+          </svg>
+        </a>
+
+        <!-- Aesthetic Theme Switcher Popover -->
+        <div class="theme-picker-wrap">
+          <button class="icon-btn theme-toggle-btn" id="themeToggleBtn" aria-label="Change color theme"
+            title="Aesthetic Live Themes" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 2a4.5 4.5 0 0 0 0 9 4.5 4.5 0 0 1 0 9 10 10 0 0 0 0-18z" />
+            </svg>
+          </button>
+
+          <div class="theme-dropdown" id="themeDropdown" hidden>
+            <div class="theme-dropdown-header">
+              <span class="theme-dropdown-title">Aesthetic Themes</span>
+              <button class="theme-auto-toggle" id="themeAutoToggle" title="Toggle automatic ambient morphing">
+                <span class="auto-indicator" id="autoIndicator"></span>
+                <span>Auto Morph</span>
+              </button>
+            </div>
+            <div class="theme-options" id="themeOptions">
+              <!-- Dynamically populated or rendered -->
+            </div>
+          </div>
+        </div>
+
+        <button class="burger" id="burger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+
+      <!-- Scroll Progress Bar -->
+      <div class="progress" id="progress"></div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+
+    <!-- 1. HERO / ABOUT BENTO CARD -->
+    <section id="home" class="card hero reveal">
+      <div class="photo-wrap">
+        <img src="assets/images/profile/profile.jpg" alt="Portrait of Pranav Lakhe" class="photo" width="300" height="300" loading="eager"
+          onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80'">
+      </div>
+
+      <div class="hero-text" id="about">
+        <p class="eyebrow">Hi, I'm Pranav Lakhe</p>
+        <h1>Engineering AI systems with depth &amp; purpose.</h1>
+        <p>I'm a 3rd-year B.Tech Computer Science &amp; IT student at Symbiosis Institute of Technology, Nagpur (Class
+          of 2028). I build production-ready AI/ML architectures, intelligent computer-vision surveillance pipelines,
+          healthcare intelligence platforms, and autonomous agentic workflows.</p>
+
+        <div class="hero-badges">
+          <span class="badge"><span class="badge-dot" style="background:#10B981;"></span> Published Patent Inventor (Govt. of India)</span>
+          <span class="badge"><span class="badge-dot"></span> Smart India Hackathon '26 Finalist</span>
+          <span class="badge">MARL Research Author</span>
+          <span class="badge">Nagpur, India</span>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn dark" href="assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <span>Download Resume</span>
+            <span class="arr">→</span>
+          </a>
+          <a class="btn ghost" href="#contact">
+            <span>Get in touch</span>
+            <span class="arr">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SKILLS + RESUME QUICK BENTO ROW -->
+    <div class="grid-2">
+      <!-- Technical Skills Bento -->
+      <section class="card reveal" id="skills">
+        <h2>Technical Skills</h2>
+
+        <div class="skill-group">
+          <h3>Programming Languages</h3>
+          <div class="chips">
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>C</span>
+            <span>C++</span>
+            <span>Embedded C</span>
+            <span>Arduino</span>
+            <span>Java</span>
+            <span>Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>AI / Machine Learning &amp; Vision</h3>
+          <div class="chips">
+            <span>Ensemble Learning</span>
+            <span>Gradient Boosting</span>
+            <span>Multi-Agent RL (MARL)</span>
+            <span>Reinforcement Learning</span>
+            <span>PyTorch</span>
+            <span>TensorFlow</span>
+            <span>scikit-learn</span>
+            <span>YOLOv8 &amp; v11</span>
+            <span>DeepSORT</span>
+            <span>ByteTrack</span>
+            <span>OpenCV</span>
+            <span>Langflow</span>
+            <span>watsonx.ai</span>
+            <span>Claude API</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Web &amp; Full-Stack</h3>
+          <div class="chips">
+            <span>React.js</span>
+            <span>FastAPI</span>
+            <span>Tailwind CSS</span>
+            <span>Express.js</span>
+            <span>Node.js</span>
+            <span>Gradio</span>
+            <span>Streamlit</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Data, DevOps &amp; Protocols</h3>
+          <div class="chips">
+            <span>PostgreSQL</span>
+            <span>Redis</span>
+            <span>Docker</span>
+            <span>Git / GitHub</span>
+            <span>REST APIs</span>
+            <span>RTSP / ONVIF</span>
+            <span>Socket Programming</span>
+            <span>Network Security</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume Highlights Bento -->
+      <section class="card reveal resume-card">
+        <h2>Career Overview</h2>
+        <div class="dark-box">
+          <div>
+            <p class="dark-box-title">Complete Professional Resume</p>
+            <p class="dark-box-sub">Full breakdown of projects, hackathons, internships &amp; publications.</p>
+          </div>
+          <a class="btn light" href="assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <span>View PDF</span>
+            <span class="arr">↗</span>
+          </a>
+        </div>
+
+        <div class="facts">
+          <div class="fact-item">
+            <strong>2028</strong>
+            <span>Graduating SIT Nagpur</span>
+          </div>
+          <div class="fact-item">
+            <strong>1</strong>
+            <span>Published Govt. Patent</span>
+          </div>
+          <div class="fact-item">
+            <strong>1</strong>
+            <span>MARL Research Paper</span>
+          </div>
+          <div class="fact-item">
+            <strong>SIH '26</strong>
+            <span>National Hackathon</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 3. PROJECTS SECTION (SOFTWARE & HARDWARE TABS) -->
+    <section id="projects" class="projects-master">
+      <!-- Section Header & Category Filter Tabs -->
+      <div class="card projects-header-bar reveal">
+        <div class="projects-header-text">
+          <p class="eyebrow">Engineering Index</p>
+          <h2 class="projects-main-title">Projects &amp; Systems</h2>
+          <p class="projects-header-desc">
+            Explore 5 core AI, computer vision, cybersecurity &amp; research software systems, or switch to the embedded hardware prototype.
+          </p>
+        </div>
+
+        <!-- Segmented Tab Controls (Default: Software) -->
+        <div class="projects-tabs-pill" role="tablist" aria-label="Project Category">
+          <button type="button" class="proj-tab-btn active" id="tabSoftwareBtn" role="tab" aria-selected="true" aria-controls="viewSoftware">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <span>Software Projects</span>
+            <span class="proj-count-badge">5</span>
+          </button>
+          <button type="button" class="proj-tab-btn" id="tabHardwareBtn" role="tab" aria-selected="false" aria-controls="viewHardware">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+            <span>Hardware Project</span>
+            <span class="proj-count-badge">1</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab View 1: Software Projects (Default Active) -->
+      <div class="projects-view-panel active" id="viewSoftware" role="tabpanel" aria-labelledby="tabSoftwareBtn">
+        <div class="projects">
+          <!-- Left Sticky Info Card -->
+          <div class="card intro reveal">
+            <div>
+              <p class="eyebrow">Software Systems</p>
+              <h2>Engineered with modern AI and scalable design.</h2>
+              <p class="intro-desc">Here is a curated selection of autonomous systems, computer vision platforms, healthcare
+                intelligence, cybersecurity tooling, and multi-agent reinforcement learning pipelines I've built.</p>
+            </div>
+
+            <div class="intro-footer">
+              <div class="deck-hints">
+                <span class="hint-pill">Use arrows or swipe to navigate deck (5 projects)</span>
+              </div>
+              <a class="btn ghost" href="#contact">
+                <span>Discuss a Project</span>
+                <span class="arr">→</span>
+              </a>
+            </div>
+          </div>
+
+      <!-- Right Interactive Stacked Deck Column -->
+      <div class="deck-col reveal">
+        <div class="deck" id="deck" aria-live="polite">
+
+          <!-- Project 1: Border Surveillance -->
+          <article class="proj lav" data-index="0">
+            <div class="proj-header">
+              <div class="tags">
+                <span>SIH 2026 Finalist</span>
+                <span>YOLOv11</span>
+                <span>FastAPI</span>
+                <span>React</span>
+                <span>ByteTrack</span>
+              </div>
+              <span class="proj-badge">Border Security</span>
+            </div>
+
+            <h3>AI-Based Border Surveillance Video Analytics</h3>
+
+            <div class="panel">
+              <div class="panel-terminal">
+                <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                <span class="panel-label">SIH26187 // Ministry of Home Affairs &amp; SSB</span>
+              </div>
+              <code>RTSP Stream → YOLOv11 Edge Detection → ByteTrack → Virtual Fence Alerts</code>
+            </div>
+
+            <p>Smart India Hackathon 2026 project for Ministry of Home Affairs / SSB by Team Hyrex Coders. Converts
+              legacy IP-CCTV into an intelligent intrusion detection network with virtual fences, vehicle tracking,
+              ANPR, and offline-first edge processing.</p>
+
+            <div class="proj-actions">
+              <a class="btn dark" href="https://github.com/Pranavv28" target="_blank" rel="noopener noreferrer">
+                <span>View Repository</span>
+                <span class="arr">→</span>
+              </a>
+              <span class="proj-note">Team Hyrex Coders (T005)</span>
+            </div>
+          </article>
+
+          <!-- Project 2: SHREEDHA Hospital ROI -->
+          <article class="proj mint" data-index="1">
+            <div class="proj-header">
+              <div class="tags">
+                <span>Healthcare IT</span>
+                <span>FastAPI</span>
+                <span>PostgreSQL</span>
+                <span>Claude API</span>
+                <span>scikit-learn</span>
+              </div>
+              <span class="proj-badge">Financial AI</span>
+            </div>
+
+            <h3>SHREEDHA Hospital — Healthcare ROI Dashboard</h3>
+
+            <div class="panel">
+              <div class="panel-terminal">
+                <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                <span class="panel-label">Lead Advisor: Dr. Bhupesh Kumar Dewangan</span>
+              </div>
+              <code>Billing Ingestion → Leakage Radar → Anomaly Detection → LLM Financial Copilot</code>
+            </div>
+
+            <p>Hospital financial intelligence platform converting siloed clinical and billing data into executive
+              insights. Features real-time revenue leakage radar, department-level ROI simulator for high-value
+              equipment purchases, and natural-language financial Copilot.</p>
+
+            <div class="proj-actions">
+              <a class="btn dark" href="https://github.com/Pranavv28" target="_blank" rel="noopener noreferrer">
+                <span>View Project</span>
+                <span class="arr">→</span>
+              </a>
+              <span class="proj-note">SIT Nagpur Research</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Automated Medical Report Summarizer (SaafReport) -->
+          <article class="proj soft" data-index="2">
+            <div class="proj-header">
+              <div class="tags">
+                <span>Agentic AI</span>
+                <span>Claude 3.5</span>
+                <span>Python</span>
+                <span>pdfplumber</span>
+                <span>Gradio / Web</span>
+              </div>
+              <span class="proj-badge">Agentic AI</span>
+            </div>
+
+            <h3>SaafReport — AI Medical Report Summarizer</h3>
+
+            <!-- UI Screenshot Preview (Click to expand in lightbox) -->
+            <div class="t-cert-wrap" data-img="assets/images/projects/saafreport-preview.png" data-title="SaafReport — AI Medical Report Summarizer Interface" data-issuer="CA3 Agentic AI &amp; Automation" data-date="Healthcare AI" style="margin: 6px 0 10px;" title="Click to expand full interface screenshot">
+              <img src="assets/images/projects/saafreport-preview.png" alt="SaafReport AI Medical Report Summarizer Interface" class="cert-img-preview" style="max-height: 140px; object-fit: cover; object-position: top left;" loading="lazy">
+              <span class="t-img-caption">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 4px;"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                SaafReport Web UI · Click to expand
+              </span>
+            </div>
+
+            <div class="panel">
+              <div class="panel-terminal">
+                <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                <span class="panel-label">Agentic Architecture: Understand · Prepare · Ask</span>
+              </div>
+              <code>Medical PDF Ingestion → pdfplumber Extract → Claude LLM Agent → 3-Variant Calm Summary</code>
+            </div>
+
+            <p>Autonomous healthcare agent that turns dense clinical reports into short, calm summaries. Generates categorized actionable findings: <em>What stands out</em>, <em>What looks steady</em>, and <em>Questions to take with you</em>, with multi-format export to PDF and JSON.</p>
+
+            <div class="proj-actions">
+              <a class="btn dark" href="https://github.com/Pranavv28/Health-Report-Summarizer-AI-Application"
+                target="_blank" rel="noopener noreferrer">
+                <span>View GitHub Repository</span>
+                <span class="arr">→</span>
+              </a>
+              <span class="proj-note">Safety-first by design</span>
+            </div>
+          </article>
+
+          <!-- Project 4: California House Price Predictor -->
+          <article class="proj sand" data-index="3">
+            <div class="proj-header">
+              <div class="tags">
+                <span>ML Pipeline</span>
+                <span>scikit-learn</span>
+                <span>GridSearchCV</span>
+                <span>Streamlit</span>
+              </div>
+              <span class="proj-badge">R² = 0.8456</span>
+            </div>
+
+            <h3>California Housing Price Predictor Pipeline</h3>
+
+            <div class="panel">
+              <div class="panel-terminal">
+                <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                <span class="panel-label">Maincrafts Technology Internship</span>
+              </div>
+              <code>EDA → Feature Engineering → Linear (0.66) → Tree (0.84) → Tuned Model (0.8456)</code>
+            </div>
+
+            <p>Rigorous multi-model machine learning benchmark on the California Housing dataset. Achieved R² = 0.8456
+              using hyperparameter-optimized estimators, accompanied by IEEE-style technical documentation and
+              interactive Streamlit deployment.</p>
+
+            <div class="proj-actions">
+              <a class="btn dark" href="https://github.com/Pranavv28/california-house-price-predictor" target="_blank"
+                rel="noopener noreferrer">
+                <span>GitHub Repository</span>
+                <span class="arr">→</span>
+              </a>
+              <span class="proj-note">Full ML Lifecycle</span>
+            </div>
+          </article>
+
+          <!-- Project 5: MARL Autonomous Urban Systems Research -->
+          <article class="proj lav" data-index="4">
+            <div class="proj-header">
+              <div class="tags">
+                <span>Research Paper</span>
+                <span>Multi-Agent RL</span>
+                <span>Decentralized AI</span>
+                <span>Urban Mobility</span>
+                <span>12-Page Study</span>
+              </div>
+              <span class="proj-badge">Research Paper</span>
+            </div>
+
+            <h3>Multi-Agent Reinforcement Learning for Autonomous Urban Fleets</h3>
+
+            <!-- Research Paper First Page Preview -->
+            <div class="t-cert-wrap" data-img="assets/images/certificates/marl-research-preview.png" data-title="MARL Research Paper — Multi-Agent Reinforcement Learning for Autonomous Urban Systems" data-issuer="Symbiosis Institute of Technology, Nagpur" data-date="12-Page Research Study" style="margin: 4px 0 8px;" title="Click to inspect paper preview">
+              <img src="assets/images/certificates/marl-research-preview.png" alt="MARL Research Paper Page 1 Preview" class="cert-img-preview" style="max-height: 120px; object-fit: cover; object-position: top center;" loading="lazy">
+              <span class="t-img-caption">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 4px;"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                MARL Paper (Page 1 of 12) · Click to expand
+              </span>
+            </div>
+
+            <div class="panel">
+              <div class="panel-terminal">
+                <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                <span class="panel-label">Autonomous Fleets // Multi-Agent Policy Optimization</span>
+              </div>
+              <code>Urban Grid Ingestion → Spatial Multi-Vehicle Graph → Decentralized Policy → Zero Deadlock Flow</code>
+            </div>
+
+            <p>Authored in-depth 12-page research study exploring decentralized <strong>Multi-Agent Reinforcement Learning (MARL)</strong> architectures for autonomous vehicle fleets in dense urban environments. Formulates shared reward mechanisms, spatial multi-vehicle coordination protocols, and collision-avoidance algorithms to maximize throughput and eliminate deadlocks across complex intersections.</p>
+
+            <div class="proj-actions">
+              <a class="btn dark" href="assets/docs/MARL-Research-Paper.pdf" target="_blank" rel="noopener noreferrer">
+                <span>Read Full Paper (PDF)</span>
+                <span class="arr">→</span>
+              </a>
+              <span class="proj-note">12-Page Comprehensive Study</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Deck Controls -->
+        <div class="deck-ctrl">
+          <button class="btn ghost" id="prev" aria-label="Previous project card">← Prev</button>
+          <div class="deck-dots" id="deckDots"></div>
+          <span id="count">1 / 5</span>
+          <button class="btn dark" id="next" aria-label="Next project card">Next <span class="arr">→</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab View 2: Hardware Project (Hidden by default, 1 Project) -->
+  <div class="projects-view-panel" id="viewHardware" role="tabpanel" aria-labelledby="tabHardwareBtn" hidden>
+    <div id="hardware-flashcard" class="card flash-card-section reveal">
+      <div class="flash-section-header">
+        <div class="flash-header-left">
+          <div class="flash-tag-row">
+            <span class="flash-mini-badge">Embedded Hardware Prototype</span>
+            <span class="flash-tag">Microcontrollers &amp; Embedded Systems (MES)</span>
+            <span class="flash-tag">Physical Computing</span>
+          </div>
+          <h2 class="flash-section-title">Arduino-Based Real-Time Ultrasonic Radar System</h2>
+          <p class="flash-section-sub">Coursework prototype · Secondary hardware project · Interactive 3D flash card with live sweep telemetry &amp; hardware circuit specs.</p>
+        </div>
+        <div class="flash-header-right">
+          <button type="button" class="btn dark flash-flip-btn" id="flashFlipTrigger" aria-label="Flip flash card to view circuit and schematics">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+            </svg>
+            <span>Flip Flash Card ↻</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 3D Flippable Flash Card Container -->
+      <div class="flash-card-stage">
+        <div class="flash-card" id="hardwareFlashCard" role="region" aria-label="Arduino Radar Flash Card">
+          
+          <!-- FRONT FACE: Live Radar Setup & Core Working Principle -->
+          <div class="flash-face flash-face-front">
+            <div class="flash-face-header">
+              <div class="flash-face-pill">
+                <span class="flash-pulse-dot"></span>
+                <span>Side A · Live System &amp; Processing GUI Telemetry</span>
+              </div>
+              <button type="button" class="flash-flip-mini-btn flash-flip-btn" aria-label="Flip to side B">
+                <span>Flip to Circuit (Side B)</span>
+                <span class="flash-flip-icon">↻</span>
+              </button>
+            </div>
+
+            <div class="flash-face-body">
+              <div class="flash-media-wrap hw-photo-card" data-img="assets/images/projects/radar-system-live.jpg" data-title="Arduino Radar System — Live Sweep &amp; Telemetry on Processing IDE" data-issuer="MES Hardware Lab · SIT Nagpur" data-date="Real-Time Prototype" title="Click to view full image in lightbox">
+                <img src="assets/images/projects/radar-system-live.jpg" alt="Arduino Ultrasonic Radar System live testing with Processing IDE GUI" class="flash-img" loading="lazy">
+                <div class="flash-media-overlay">
+                  <span>Live Sweep: HC-SR04 Sensor &amp; Processing IDE Radar GUI</span>
+                  <span class="flash-zoom-badge">🔍 Zoom Photo</span>
+                </div>
+              </div>
+
+              <div class="flash-specs-column">
+                <div class="flash-spec-block">
+                  <h4>
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    <span>How It Operates</span>
+                  </h4>
+                  <p>SG90 servo motor sweeps sensor continuously from 0° to 180°. HC-SR04 transmits ultrasonic acoustic pulses; when reflected by obstacles, echo duration is computed into distances and sent via 9600-baud UART serial to Processing IDE.</p>
+                </div>
+
+                <div class="flash-formula-box">
+                  <span class="flash-formula-label">Distance Formula:</span>
+                  <code>Distance (cm) = (Echo Duration × 0.034) / 2</code>
+                </div>
+
+                <div class="flash-metrics-grid">
+                  <div class="flash-metric-item">
+                    <span class="metric-num">0°–180°</span>
+                    <span class="metric-desc">Servo Sweep</span>
+                  </div>
+                  <div class="flash-metric-item">
+                    <span class="metric-num">2–400 cm</span>
+                    <span class="metric-desc">Object Range</span>
+                  </div>
+                  <div class="flash-metric-item">
+                    <span class="metric-num">9600 Baud</span>
+                    <span class="metric-desc">UART Serial</span>
+                  </div>
+                  <div class="flash-metric-item">
+                    <span class="metric-num">15°</span>
+                    <span class="metric-desc">Beam Angle</span>
+                  </div>
+                </div>
+
+                <div class="flash-indicators">
+                  <span class="flash-ind-tag"><span class="rad-dot rad-cyan"></span> Cyan: Active Sweep Beam</span>
+                  <span class="flash-ind-tag"><span class="rad-dot rad-red"></span> Red: Obstacle Detected</span>
+                  <span class="flash-ind-tag"><span class="rad-dot rad-green"></span> Green: Clear Radius Arc</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flash-face-footer">
+              <span class="flash-hint">💡 Tip: Click "Flip Flash Card ↻" above or button on top right to view the breadboard circuit and pinout schematic.</span>
+            </div>
+          </div>
+
+          <!-- BACK FACE: Breadboard Circuit, Pinout Table & Components -->
+          <div class="flash-face flash-face-back">
+            <div class="flash-face-header">
+              <div class="flash-face-pill">
+                <span class="flash-pulse-dot back-dot"></span>
+                <span>Side B · Hardware Breadboard &amp; Pinout Architecture</span>
+              </div>
+              <button type="button" class="flash-flip-mini-btn flash-flip-btn" aria-label="Flip to side A">
+                <span>Flip to System (Side A)</span>
+                <span class="flash-flip-icon">↺</span>
+              </button>
+            </div>
+
+            <div class="flash-face-body">
+              <div class="flash-media-wrap hw-photo-card" data-img="assets/images/projects/radar-circuit-board.jpg" data-title="Arduino Circuit Architecture — LCD 16x2 &amp; Multi-Stage LED Display" data-issuer="MES Hardware Lab · SIT Nagpur" data-date="Hardware Breadboard" title="Click to view full image in lightbox">
+                <img src="assets/images/projects/radar-circuit-board.jpg" alt="Arduino Uno breadboard circuit with 16x2 LCD display and LED array" class="flash-img" loading="lazy">
+                <div class="flash-media-overlay">
+                  <span>Breadboard: Arduino Uno, 16x2 LCD Display &amp; LED Array</span>
+                  <span class="flash-zoom-badge">🔍 Zoom Photo</span>
+                </div>
+              </div>
+
+              <div class="flash-specs-column">
+                <div class="flash-spec-block">
+                  <h4>
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>
+                    <span>Hardware Pinout Mapping</span>
+                  </h4>
+                  <div class="flash-table-wrap">
+                    <table class="flash-table">
+                      <thead>
+                        <tr><th>Component Pin</th><th>Arduino Uno Connection</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td><strong>HC-SR04 TRIG</strong></td><td>Digital Pin 9 (Acoustic Trigger)</td></tr>
+                        <tr><td><strong>HC-SR04 ECHO</strong></td><td>Digital Pin 10 (Echo Timing)</td></tr>
+                        <tr><td><strong>SG90 Servo PWM</strong></td><td>Digital Pin 11 (Dedicated PWM)</td></tr>
+                        <tr><td><strong>16x2 LCD &amp; LEDs</strong></td><td>Digital Pins 2–8 + 5V / GND Rail</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="flash-spec-block">
+                  <h4>
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    <span>Bill of Materials (BOM)</span>
+                  </h4>
+                  <div class="chips flash-chips">
+                    <span>Arduino Uno R3</span>
+                    <span>HC-SR04 Sensor</span>
+                    <span>SG90 Micro Servo</span>
+                    <span>16x2 Alphanumeric LCD</span>
+                    <span>Multi-Stage LEDs</span>
+                    <span>Solderless Breadboard</span>
+                  </div>
+                </div>
+
+                <div class="flash-spec-block">
+                  <h4>
+                    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+                    <span>Future Upgrades</span>
+                  </h4>
+                  <p style="font-size: 13.5px; color: #555555; margin: 0;">LiDAR ToF sensor integration for mm-accuracy, ESP32-CAM optical obstacle verification, and 3D spatial mapping.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flash-face-footer">
+              <span class="flash-hint">💡 Tip: Click "Flip to System (Side A) ↺" to flip back to live sweep and telemetry overview.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- 4. EXPERIENCE & INTERNSHIPS TIMELINE -->
+    <section id="experience" class="card reveal">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Track Record</p>
+          <h2>Experience &amp; Internships</h2>
+        </div>
+        <p class="section-sub">Hands-on industrial and academic contributions across Agentic AI, Computer Vision, and
+          Machine Learning.</p>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Published Patent: Official Patent Office Journal -->
+        <div class="t-item reveal">
+          <span class="dot" aria-hidden="true" style="background: #10B981; box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.25);"></span>
+          <div class="t-card" style="border-left: 3px solid #10B981;">
+            <div class="t-card-head">
+              <div>
+                <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 6px; flex-wrap: wrap;">
+                  <span style="background: #111111; color: #86EFAC; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 3px 8px; border-radius: 6px;">Published Patent</span>
+                  <span style="font-size: 12.5px; font-weight: 600; color: var(--muted);">Application No: 202521125542 A</span>
+                  <span style="font-size: 12.5px; font-weight: 600; color: var(--muted);">· The Patent Office Journal No. 1/2026 (Page 439)</span>
+                </div>
+                <h3>System and Method for Predicting Academic Performance Using Ensemble Machine Learning Architecture</h3>
+                <p class="meta">First Inventor / Lead · The Patent Office, Government of India &amp; Symbiosis International (Deemed University)</p>
+              </div>
+              <span class="t-badge" style="background: #E1F5EB; color: #065F46; font-weight: 600;">Published: Jan 2, 2026</span>
+            </div>
+
+            <!-- Patent Document Previews (Click to expand in lightbox) -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin: 16px 0;">
+              <div class="t-img-wrap" data-img="assets/images/certificates/patent-publication-details.png" data-title="The Patent Office Journal Publication Details (App No: 202521125542 A)" data-issuer="The Patent Office, Government of India · Symbiosis International" data-date="Published: Jan 2, 2026" data-link="https://lnkd.in/p/dSAcTYV6" title="Click to inspect official patent gazette publication">
+                <img src="assets/images/certificates/patent-publication-details.png" alt="Official Patent Publication Gazette Page 439" class="t-img" loading="lazy" style="max-height: 220px; object-fit: cover; object-position: top; border-radius: 12px;">
+                <span class="t-img-caption">Official Patent Gazette Publication (Page 439) · Click to expand</span>
+              </div>
+              <div class="t-img-wrap" data-img="assets/images/certificates/patent-journal-cover.png" data-title="The Patent Office Journal Official Cover (Issue No. 1/2026)" data-issuer="The Patent Office, Government of India" data-date="Dated: 02/01/2026" data-link="https://lnkd.in/p/dSAcTYV6" title="Click to inspect journal cover">
+                <img src="assets/images/certificates/patent-journal-cover.png" alt="Official Journal of the Patent Office Issue 1/2026 Cover" class="t-img" loading="lazy" style="max-height: 220px; object-fit: cover; object-position: top; border-radius: 12px;">
+                <span class="t-img-caption">Official Journal Cover (Issue No. 1/2026) · Click to expand</span>
+              </div>
+            </div>
+
+            <p>Officially published patent in <em>The Patent Office Journal</em> (Issue No. 1/2026, Published 02/01/2026) for an end-to-end computer-implemented machine learning architecture predicting student academic performance with exceptional empirical precision (<strong>R² &gt; 0.89</strong>).</p>
+
+            <p style="margin-top: 10px;">The invention captures multi-dimensional student telemetry including lifestyle parameters, study habits, demographic metrics, and socio-economic factors. It constructs an optimized voting ensemble combining linear regression and gradient boosting models with mode-based missing value imputation and numerical standardization pipelines engineered to operate efficiently on standard computing hardware.</p>
+
+            <!-- Research Team & Mentors -->
+            <div style="margin-top: 14px;">
+              <span style="font-size: 12.5px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em;">Inventors &amp; Mentors:</span>
+              <div class="t-team-list" style="margin-top: 6px;">
+                <a href="https://www.linkedin.com/in/pranav-lakhe-696044373/" target="_blank" rel="noopener noreferrer" class="t-member-link" title="LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z"/></svg>
+                  <span>Pranav Lakhe (1st Inventor)</span>
+                </a>
+                <a href="https://www.linkedin.com/in/parth-dhoke-24a97a320/" target="_blank" rel="noopener noreferrer" class="t-member-link" title="LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z"/></svg>
+                  <span>Parth Dhoke</span>
+                </a>
+                <a href="https://www.linkedin.com/in/parth-vishnu-4517b8306/" target="_blank" rel="noopener noreferrer" class="t-member-link" title="LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z"/></svg>
+                  <span>Parth Vishnu</span>
+                </a>
+                <span class="t-member-link" title="Mentor" style="cursor: default;">
+                  <span>Dr. Gagandeep Kaur (Mentor)</span>
+                </span>
+                <span class="t-member-link" title="Mentor" style="cursor: default;">
+                  <span>Dr. Giridhar Urkude (Mentor)</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="t-cert-actions" style="margin-top: 14px;">
+              <div class="chips" style="margin-top: 0;">
+                <span>Patent App: 202521125542 A</span>
+                <span>IPC: G06N 20/20</span>
+                <span>Ensemble Learning</span>
+                <span>Voting Regression</span>
+                <span>Gradient Boosting</span>
+                <span>R² &gt; 0.89</span>
+                <span>Symbiosis International</span>
+              </div>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <a class="btn dark t-cert-btn" href="https://lnkd.in/p/dSAcTYV6" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z"/></svg>
+                  <span>View LinkedIn Announcement</span>
+                  <span class="arr">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ICSIT 2026 Experience -->
+        <div class="t-item reveal">
+          <span class="dot" aria-hidden="true"></span>
+          <div class="t-card">
+            <div class="t-card-head">
+              <div>
+                <h3>ICSIT 2026 — 2nd Int. Conference on Sustainability, Innovation &amp; Technology</h3>
+                <p class="meta">Technical Volunteer &amp; Hybrid Operations Lead · Symbiosis Institute of Technology (SIT), Nagpur</p>
+              </div>
+              <span class="t-badge">Sep 26–27, 2026</span>
+            </div>
+
+            <!-- Group Photo Preview (Click to open full lightbox) -->
+            <div class="t-img-wrap" data-img="assets/images/experience/icsit-2026.jpg" data-title="ICSIT 2026 — Organizing Committee &amp; Technical Operations Team" data-issuer="Symbiosis Institute of Technology, Nagpur" data-date="26–27 September 2026" title="Click to view full photo">
+              <img src="assets/images/experience/icsit-2026.jpg" alt="ICSIT 2026 Technical Volunteer Committee with Dignitaries at SIT Nagpur" class="t-img" loading="lazy">
+              <span class="t-img-caption">ICSIT 2026 Organizing Committee &amp; Technical Operations Team · Click to expand</span>
+            </div>
+
+            <p>Two days. One global platform. Proud to have contributed as a <strong>Technical Volunteer</strong> ensuring seamless tech operations, session management, and hybrid coordination across all tracks at the 2nd International Conference on Sustainability, Innovation &amp; Technology (ICSIT 2026) at SIT Nagpur.</p>
+
+            <p style="margin-top: 10px;">ICSIT 2026 brought together academicians, researchers, industry professionals, and innovators from across the globe, featuring:</p>
+            <ul style="list-style: disc; padding-left: 20px; margin: 8px 0; color: #4B4B4B; font-size: 15px; display: grid; gap: 4px;">
+              <li><strong>Research Paper Presentations &amp; Keynote Sessions</strong> with global experts from the USA, UK, Australia, Malaysia, Thailand, Philippines, China, Sri Lanka, and more.</li>
+              <li><strong>Industry Research Panels</strong> with leaders from organizations including C&amp;R Software, ValueMomentum, Josh Software, AIT Global, and PwC India.</li>
+              <li><strong>Technical Sessions &amp; Knowledge Exchange</strong> seamlessly conducted in hybrid mode.</li>
+            </ul>
+
+            <!-- Technical Operations Team Mentions -->
+            <div style="margin-top: 14px;">
+              <span style="font-size: 12.5px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em;">Technical Workflow &amp; IEEE Team:</span>
+              <div class="t-team-list">
+                <a href="https://www.linkedin.com/in/aswin-binu-587978320/" target="_blank" rel="noopener noreferrer" class="t-member-link" title="LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z"/></svg>
+                  <span>Aswin Binu (IEEE Chair)</span>
+                </a>
+                <a href="https://www.linkedin.com/in/pranav-lakhe-696044373/" target="_blank" rel="noopener noreferrer" class="t-member-link" title="LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z"/></svg>
+                  <span>Pranav Lakhe</span>
+                </a>
+                <a href="https://www.linkedin.com/in/satish-purohit-6293b831a/" target="_blank" rel="noopener noreferrer" class="t-member-link" title="LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z"/></svg>
+                  <span>Satish Purohit</span>
+                </a>
+                <a href="https://www.linkedin.com/in/anish-kumar-3bba57320/" target="_blank" rel="noopener noreferrer" class="t-member-link" title="LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z"/></svg>
+                  <span>Anish Kumar</span>
+                </a>
+                <a href="https://www.linkedin.com/in/parth-dhoke-24a97a320/" target="_blank" rel="noopener noreferrer" class="t-member-link" title="LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z"/></svg>
+                  <span>Parth Dhoke</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="chips">
+              <span>Hybrid Conference Operations</span>
+              <span>Session Management</span>
+              <span>AV &amp; Stream Coordination</span>
+              <span>IEEE Collaboration</span>
+              <span>Technical Operations</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IBM SkillsBuild -->
+        <div class="t-item reveal">
+          <span class="dot" aria-hidden="true"></span>
+          <div class="t-card">
+            <div class="t-card-head">
+              <div>
+                <h3>IBM SkillsBuild × AICTE 2026</h3>
+                <p class="meta">Agentic AI &amp; Automation Track · Industrial Internship</p>
+              </div>
+              <span class="t-badge">Verified Credential</span>
+            </div>
+
+            <!-- Verified Completion Certificate Preview -->
+            <div class="t-cert-wrap" data-img="assets/images/certificates/edunet-ibm-internship.png" data-title="IBM SkillsBuild × AICTE — Certificate of Internship Completion" data-issuer="IBM SkillsBuild &amp; Edunet Foundation" data-date="2026" title="Click to expand certificate preview">
+              <img src="assets/images/certificates/edunet-ibm-internship.png" alt="IBM SkillsBuild × AICTE Certificate of Internship Completion" class="cert-img-preview" loading="lazy">
+              <span class="t-img-caption">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 4px;"><path d="M12 15l-2 5l9-13h-6l2-5l-9 13h6z"/></svg>
+                IBM SkillsBuild Completion Certificate · Click to expand
+              </span>
+            </div>
+
+            <p>Developed an autonomous Interview Trainer Agent using Langflow orchestrated with IBM Granite models on
+              watsonx.ai. Designed conversational guardrails, adaptive questioning trees, and automated skill-assessment
+              rubrics for technical candidate screening.</p>
+
+            <div class="t-cert-actions">
+              <div class="chips" style="margin-top: 0;">
+                <span>Langflow</span>
+                <span>IBM Granite</span>
+                <span>watsonx.ai</span>
+                <span>Agentic AI</span>
+                <span>Prompt Engineering</span>
+              </div>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <a class="btn dark t-cert-btn" href="https://github.com/Pranavv28/AI-Powered-Interview-Trainer-Agent" target="_blank" rel="noopener noreferrer">
+                  <span>View GitHub Repository</span>
+                  <span class="arr">→</span>
+                </a>
+                <a class="btn ghost t-cert-btn" href="assets/docs/certificates/Ibm certificate.pdf" target="_blank" rel="noopener noreferrer">
+                  <span>View Certificate PDF</span>
+                  <span class="arr">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Maincrafts Technology -->
+        <div class="t-item reveal">
+          <span class="dot" aria-hidden="true"></span>
+          <div class="t-card">
+            <div class="t-card-head">
+              <div>
+                <h3>Maincrafts Technology</h3>
+                <p class="meta">Machine Learning Pipeline Intern · 3 Months</p>
+              </div>
+              <span class="t-badge">Verified Credential</span>
+            </div>
+
+            <!-- Verified Completion Certificate Preview -->
+            <div class="t-cert-wrap" data-img="assets/images/certificates/maincrafts-internship.jpg" data-title="Maincrafts Technology — Certificate of Internship Completion" data-issuer="Maincrafts Technology" data-date="Completed" title="Click to expand certificate preview">
+              <img src="assets/images/certificates/maincrafts-internship.jpg" alt="Maincrafts Technology AI/ML Internship Completion Certificate" class="cert-img-preview" loading="lazy">
+              <span class="t-img-caption">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 4px;"><path d="M12 15l-2 5l9-13h-6l2-5l-9 13h6z"/></svg>
+                Maincrafts AI/ML Completion Certificate · Click to expand
+              </span>
+            </div>
+
+            <p>Engineered comprehensive predictive ML pipelines covering data preprocessing, feature engineering,
+              regression modeling (Linear &amp; Decision Trees), and GridSearchCV hyperparameter tuning achieving
+              validation R² = 0.8456. Delivered production Streamlit apps and IEEE-standard reports.</p>
+
+            <div class="t-cert-actions">
+              <div class="chips" style="margin-top: 0;">
+                <span>Python</span>
+                <span>scikit-learn</span>
+                <span>Streamlit</span>
+                <span>GridSearchCV</span>
+                <span>Data Analysis</span>
+              </div>
+              <a class="btn ghost t-cert-btn" href="assets/docs/certificates/Maincrafts Certificate of Internship-38_page-0001.jpg" target="_blank" rel="noopener noreferrer">
+                <span>View Certificate Image</span>
+                <span class="arr">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- _VOIS Internship -->
+        <div class="t-item reveal">
+          <span class="dot" aria-hidden="true"></span>
+          <div class="t-card">
+            <div class="t-card-head">
+              <div>
+                <h3>_VOIS (Vodafone Intelligent Solutions) × AICTE</h3>
+                <p class="meta">'VOIS for Tech University Engagement Program' · Virtual Cybersecurity Internship · Edunet Foundation</p>
+              </div>
+              <span class="t-badge">10 Mar – 5 Apr 2026</span>
+            </div>
+
+            <!-- Verified Completion Certificate Preview -->
+            <div class="t-cert-wrap" data-img="assets/images/certificates/vois-certificate.png" data-title="AICTE &amp; 'VOIS for Tech' Virtual Cybersecurity Internship Certificate" data-issuer="Vodafone Idea Foundation · VOIS · Edunet Foundation · AICTE" data-date="10th March – 5th April 2026" title="Click to expand certificate preview">
+              <img src="assets/images/certificates/vois-certificate.png" alt="AICTE and VOIS for Tech Virtual Cybersecurity Internship Certificate" class="cert-img-preview" loading="lazy">
+              <span class="t-img-caption">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 4px;"><path d="M12 15l-2 5l9-13h-6l2-5l-9 13h6z"/></svg>
+                AICTE &amp; 'VOIS for Tech' Virtual Internship Certificate · Click to expand
+              </span>
+            </div>
+
+            <p>Successfully completed the virtual internship in <strong>Cybersecurity</strong> through the AICTE and <strong>'VOIS for Tech University Engagement Program'</strong> implemented by Edunet Foundation (conducted from 10th March to 5th April, 2026).</p>
+
+            <p style="margin-top: 8px;">The cornerstone of this experience was the design and development of an asynchronous, multi-threaded <strong>Network Port Scanner GUI</strong> in Python. Executed targeted reconnaissance scans against test hosts, successfully identifying open DNS services (<strong>Port 53</strong>) to conduct detailed risk assessments focusing on potential amplification vectors and zone transfer vulnerabilities. Bridged theoretical security concepts with practical tool engineering as a direct complement to academic curriculum at Symbiosis Institute of Technology Nagpur.</p>
+
+            <div class="t-cert-actions">
+              <div class="chips" style="margin-top: 0;">
+                <span>Python</span>
+                <span>Socket Programming</span>
+                <span>Multi-Threading</span>
+                <span>Tkinter GUI</span>
+                <span>Network Security</span>
+                <span>Port 53 Reconnaissance</span>
+                <span>DNS Vulnerability Analysis</span>
+              </div>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <a class="btn dark t-cert-btn" href="https://github.com/Pranavv28/Network-Port-Scanner-GUI" target="_blank" rel="noopener noreferrer">
+                  <span>View GitHub Repository</span>
+                  <span class="arr">→</span>
+                </a>
+                <a class="btn ghost t-cert-btn" href="assets/images/certificates/vois-certificate.png" target="_blank" rel="noopener noreferrer">
+                  <span>View Certificate Image</span>
+                  <span class="arr">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIH 2026 -->
+        <div class="t-item reveal">
+          <span class="dot" aria-hidden="true"></span>
+          <div class="t-card">
+            <div class="t-card-head">
+              <div>
+                <h3>Smart India Hackathon 2026</h3>
+                <p class="meta">Hyrex Coders (Team T005) · Ministry of Home Affairs / SSB</p>
+              </div>
+              <span class="t-badge">SIH26187</span>
+            </div>
+            <p>Selected to build an edge-optimized border surveillance platform converting conventional CCTV feeds into
+              an intelligent surveillance network without hardware replacement. Architected real-time YOLOv8/v11 stream
+              ingestion, ByteTrack multi-object tracking, and virtual fence triggers.</p>
+            <div class="chips">
+              <span>YOLOv11</span>
+              <span>ByteTrack</span>
+              <span>FastAPI</span>
+              <span>React.js</span>
+              <span>Docker</span>
+              <span>Edge Computing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACEx Research -->
+        <div class="t-item reveal">
+          <span class="dot" aria-hidden="true"></span>
+          <div class="t-card">
+            <div class="t-card-head">
+              <div>
+                <h3>Academic Research — ACEx Multi-Agent AI System</h3>
+                <p class="meta">Symbiosis Institute of Technology, Nagpur</p>
+              </div>
+              <span class="t-badge">IEEE Paper</span>
+            </div>
+            <p>Authored a 7-page research paper formulating the ACEx multi-agent architecture (Assist, Explain, and
+              Algo-Generator agents). Synthesized over 16 foundational citations addressing developer ergonomics,
+              cognitive load, and enterprise deployment constraints.</p>
+            <div class="chips">
+              <span>Multi-Agent Architecture</span>
+              <span>LLM Orchestration</span>
+              <span>Research Writing</span>
+              <span>Developer Tools</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MARL Research Paper -->
+        <div class="t-item reveal">
+          <span class="dot" aria-hidden="true"></span>
+          <div class="t-card">
+            <div class="t-card-head">
+              <div>
+                <h3>Academic Research — Multi-Agent Reinforcement Learning (MARL) for Autonomous Urban Systems</h3>
+                <p class="meta">Autonomous Urban Navigation &amp; Decentralized Policy Coordination · SIT Nagpur</p>
+              </div>
+              <span class="t-badge">MARL Paper</span>
+            </div>
+            <!-- MARL Paper Page 1 Preview -->
+            <div class="t-img-wrap" data-img="assets/images/certificates/marl-research-preview.png" data-title="MARL Research Paper — Multi-Agent Reinforcement Learning for Autonomous Urban Systems" data-issuer="Symbiosis Institute of Technology, Nagpur" data-date="12-Page Research Study" data-link="assets/docs/MARL-Research-Paper.pdf" title="Click to view research paper page in lightbox" style="margin: 12px 0;">
+              <img src="assets/images/certificates/marl-research-preview.png" alt="MARL Research Paper Page 1 Preview" class="t-img" loading="lazy" style="max-height: 220px; object-fit: cover; object-position: top center; border-radius: 12px;">
+              <span class="t-img-caption">Research Paper Document Preview (Page 1 of 12) · Click to expand</span>
+            </div>
+
+            <p>Authored in-depth 12-page research study exploring decentralized <strong>Multi-Agent Reinforcement Learning (MARL)</strong> architectures in complex, dynamic urban environments. Formulates shared reward mechanisms, spatial multi-vehicle coordination protocols, and collision-avoidance algorithms to optimize throughput and mitigate deadlocks across dense urban grids.</p>
+            <div class="t-cert-actions">
+              <div class="chips" style="margin-top: 0;">
+                <span>Multi-Agent RL (MARL)</span>
+                <span>Autonomous Vehicles</span>
+                <span>Urban Mobility</span>
+                <span>Policy Optimization</span>
+                <span>Decentralized Coordination</span>
+                <span>Reward Shaping</span>
+                <span>Collision Avoidance</span>
+              </div>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <a class="btn dark t-cert-btn" href="assets/docs/MARL-Research-Paper.pdf" target="_blank" rel="noopener noreferrer">
+                  <span>Read Paper (PDF)</span>
+                  <span class="arr">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. VERIFIED CERTIFICATES & CREDENTIALS -->
+    <section id="certificates" class="card reveal">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Credentials</p>
+          <h2>Certifications &amp; Achievements</h2>
+        </div>
+        <p class="section-sub">Click any certificate card to open high-resolution verified credentials preview.</p>
+      </div>
+
+      <div class="cert-grid" id="certGrid">
+
+        <!-- Published Patent: Official Journal of The Patent Office -->
+        <div class="cert" role="button" tabindex="0" data-img="assets/images/certificates/patent-publication-details.png"
+          data-title="Indian Patent Office Publication — System and Method for Predicting Academic Performance Using Ensemble Machine Learning Architecture"
+          data-issuer="The Patent Office, Government of India · Symbiosis International (Deemed University)"
+          data-date="Published: 02/01/2026 · App No: 202521125542 A"
+          data-link="https://lnkd.in/p/dSAcTYV6">
+          <div class="thumb" style="background-image: url('assets/images/certificates/patent-publication-details.png'); background-position: top center;">
+            <span class="thumb-badge" style="background: #111111; color: #86EFAC;">Official Patent Publication</span>
+          </div>
+          <h3>Published Patent (Govt. of India)</h3>
+          <p>Ensemble ML Academic Prediction · App No. 202521125542 A</p>
+          <div class="cert-actions">
+            <a href="https://lnkd.in/p/dSAcTYV6" target="_blank" rel="noopener noreferrer" class="cert-link-btn" title="View Patent Announcement on LinkedIn" onclick="event.stopPropagation()">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor">
+                <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z"/>
+              </svg>
+              <span>View LinkedIn Post</span>
+              <span class="arr">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- MARL Research Paper Publication -->
+        <div class="cert" role="button" tabindex="0" data-img="assets/images/certificates/marl-research-preview.png"
+          data-title="Academic Research Publication — Multi-Agent Reinforcement Learning (MARL) for Autonomous Urban Systems"
+          data-issuer="Symbiosis Institute of Technology, Nagpur"
+          data-date="12-Page Research Study"
+          data-link="assets/docs/MARL-Research-Paper.pdf">
+          <div class="thumb" style="background-image: url('assets/images/certificates/marl-research-preview.png'); background-position: top center;">
+            <span class="thumb-badge" style="background: #111111; color: #93C5FD;">Research Publication</span>
+          </div>
+          <h3>MARL Research Publication</h3>
+          <p>Decentralized Multi-Agent RL for Autonomous Urban Fleets</p>
+          <div class="cert-actions">
+            <a href="assets/docs/MARL-Research-Paper.pdf" target="_blank" rel="noopener noreferrer" class="cert-link-btn" title="Read Full Research Paper (PDF)" onclick="event.stopPropagation()">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+              </svg>
+              <span>Read Paper (PDF)</span>
+              <span class="arr">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- IBM SkillsBuild -->
+        <button class="cert" data-img="assets/images/certificates/edunet-ibm-internship.png"
+          data-title="IBM SkillsBuild × AICTE Internship Certificate" data-issuer="IBM SkillsBuild & Edunet Foundation"
+          data-date="2026">
+          <div class="thumb" style="background-image: url('assets/images/certificates/edunet-ibm-internship.png');">
+            <span class="thumb-badge">View Certificate</span>
+          </div>
+          <h3>IBM SkillsBuild × AICTE</h3>
+          <p>Agentic AI &amp; Automation Track · 2026</p>
+        </button>
+
+        <!-- Maincrafts Technology -->
+        <button class="cert" data-img="assets/images/certificates/maincrafts-internship.jpg"
+          data-title="Maincrafts Technology Internship Certificate" data-issuer="Maincrafts Technology"
+          data-date="Completed">
+          <div class="thumb" style="background-image: url('assets/images/certificates/maincrafts-internship.jpg');">
+            <span class="thumb-badge">View Certificate</span>
+          </div>
+          <h3>Maincrafts Technology</h3>
+          <p>AI/ML Internship &amp; Pipeline Development</p>
+        </button>
+
+        <!-- Red Hat -->
+        <button class="cert" data-img="assets/images/certificates/redhat-system-admin.png"
+          data-title="Red Hat System Administration" data-issuer="Red Hat" data-date="Certified">
+          <div class="thumb" style="background-image: url('assets/images/certificates/redhat-system-admin.png');">
+            <span class="thumb-badge">View Certificate</span>
+          </div>
+          <h3>Red Hat System Administration</h3>
+          <p>Linux Kernel &amp; Infrastructure Operations</p>
+        </button>
+
+        <!-- Microsoft Data Analytics -->
+        <button class="cert" data-img="assets/images/certificates/microsoft-data-analytics.png"
+          data-title="Microsoft Data Analytics Certificate" data-issuer="Microsoft" data-date="Data Track">
+          <div class="thumb" style="background-image: url('assets/images/certificates/microsoft-data-analytics.png');">
+            <span class="thumb-badge">View Certificate</span>
+          </div>
+          <h3>Microsoft Data Analytics</h3>
+          <p>Data Exploration &amp; Business Intelligence</p>
+        </button>
+
+        <!-- Nexus Hackathon -->
+        <div class="cert" role="button" tabindex="0" data-img="assets/images/certificates/nexus-hackathon.png"
+          data-title="Nexus Hybrid National Hackathon — MemoryReview" data-issuer="Nexus Hackathon · Chandigarh University &amp; REC"
+          data-date="05–06 June 2026" data-link="https://lnkd.in/p/dAd2RbRd">
+          <div class="thumb" style="background-image: url('assets/images/certificates/nexus-hackathon.png');">
+            <span class="thumb-badge">View Certificate</span>
+          </div>
+          <h3>Nexus Hackathon</h3>
+          <p>MemoryReview — AI Code Reviewer with Persistent Memory</p>
+          <div class="cert-actions">
+            <a href="https://lnkd.in/p/dAd2RbRd" target="_blank" rel="noopener noreferrer" class="cert-link-btn" title="View Project on LinkedIn" onclick="event.stopPropagation()">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor">
+                <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z"/>
+              </svg>
+              <span>View LinkedIn Post</span>
+              <span class="arr">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- VOIS System Security & Cybersecurity Virtual Internship -->
+        <div class="cert" role="button" tabindex="0" data-img="assets/images/certificates/vois-certificate.png"
+          data-title="AICTE &amp; 'VOIS for Tech' Virtual Cybersecurity Internship Certificate"
+          data-issuer="Vodafone Idea Foundation · VOIS · Edunet Foundation · AICTE"
+          data-date="10 Mar – 5 Apr 2026"
+          data-link="https://github.com/Pranavv28/Network-Port-Scanner-GUI">
+          <div class="thumb" style="background-image: url('assets/images/certificates/vois-certificate.png');">
+            <span class="thumb-badge">View Certificate</span>
+          </div>
+          <h3>_VOIS for Tech × AICTE</h3>
+          <p>Cybersecurity Virtual Internship · Network Port Scanner GUI</p>
+          <div class="cert-actions">
+            <a href="https://github.com/Pranavv28/Network-Port-Scanner-GUI" target="_blank" rel="noopener noreferrer" class="cert-link-btn" title="View Source Code on GitHub" onclick="event.stopPropagation()">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor">
+                <path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/>
+              </svg>
+              <span>View GitHub Repo</span>
+              <span class="arr">→</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. ACADEMIC EDUCATION -->
+    <section id="education" class="card reveal edu">
+      <div class="edu-info">
+        <p class="eyebrow">Academic Foundation</p>
+        <h2>Education</h2>
+        <h3>B.Tech, Computer Science &amp; Information Technology</h3>
+        <p class="meta">Symbiosis Institute of Technology (SIT), Nagpur</p>
+        <p class="meta-sub">Symbiosis International (Deemed to be University), Pune</p>
+        <div class="edu-specs">
+          <span><strong>Batch:</strong> 2024 – 2028</span>
+          <span><strong>Current:</strong> 3rd Year · 5th Semester</span>
+          <span><strong>PRN:</strong> 24070521248</span>
+        </div>
+      </div>
+
+      <div class="cgpa">
+        <span class="label">Academic Performance</span>
+        <!-- Cumulative CGPA: (7.4 + 7.5 + 7.9 + 7.3) / 4 = 7.53 / 10.0 -->
+        <div class="cgpa-row">
+          <strong id="cgpaNum" data-cgpa="7.53">7.53</strong>
+          <span class="cgpa-scale">/ 10.0 Cumulative</span>
+        </div>
+        <div class="bar">
+          <div class="bar-fill" id="cgpaBar"></div>
+        </div>
+
+        <!-- Clean Action Row with Toggle Button -->
+        <div class="cgpa-footer">
+          <button type="button" class="btn ghost sem-toggle-btn" id="semToggleBtn" aria-expanded="false" aria-controls="semBreakdownDrawer">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 3v18h18"/>
+              <path d="m19 9-5 5-4-4-3 3"/>
+            </svg>
+            <span id="semToggleText">View Semester-Wise GPA</span>
+            <span class="sem-arrow">▾</span>
+          </button>
+          <span class="cgpa-note">Consistently strong foundation across Semesters 1–4 · Currently in 5th Semester</span>
+        </div>
+
+        <!-- Collapsible Structured Semester Breakdown Drawer -->
+        <div class="sem-breakdown-drawer" id="semBreakdownDrawer" hidden>
+          <div class="sem-table-card">
+            <div class="sem-row">
+              <div class="sem-col-label">
+                <span class="sem-dot"></span>
+                <span>Semester 1</span>
+              </div>
+              <div class="sem-col-status">Completed</div>
+              <div class="sem-col-gpa">7.40 SGPA</div>
+            </div>
+            <div class="sem-row">
+              <div class="sem-col-label">
+                <span class="sem-dot"></span>
+                <span>Semester 2</span>
+              </div>
+              <div class="sem-col-status">Completed</div>
+              <div class="sem-col-gpa">7.50 SGPA</div>
+            </div>
+            <div class="sem-row">
+              <div class="sem-col-label">
+                <span class="sem-dot"></span>
+                <span>Semester 3</span>
+              </div>
+              <div class="sem-col-status">Completed</div>
+              <div class="sem-col-gpa">7.90 SGPA</div>
+            </div>
+            <div class="sem-row">
+              <div class="sem-col-label">
+                <span class="sem-dot"></span>
+                <span>Semester 4</span>
+              </div>
+              <div class="sem-col-status">Completed</div>
+              <div class="sem-col-gpa">7.30 SGPA</div>
+            </div>
+            <div class="sem-row sem-row-active">
+              <div class="sem-col-label">
+                <span class="sem-dot sem-dot-active"></span>
+                <span>Semester 5</span>
+              </div>
+              <div class="sem-col-status active-badge">In Progress</div>
+              <div class="sem-col-gpa">—</div>
+            </div>
+          </div>
+          <div class="sem-summary-bar">
+            <span>Cumulative Calculation: (7.40 + 7.50 + 7.90 + 7.30) ÷ 4</span>
+            <span>Cumulative CGPA: <strong>7.53 / 10.0</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT ME (HIGH-CONTRAST DARK BENTO CARD) -->
+    <section id="contact" class="card dark-card reveal">
+      <div class="contact-left">
+        <p class="eyebrow dark-eyebrow">Let's Connect</p>
+        <h2>Let's build something extraordinary.</h2>
+        <p>I'm open to AI/ML engineering roles, internships, full-stack collaborative opportunities, or research
+          partnerships. Drop a message and I'll respond within 24 hours.</p>
+
+        <ul class="contact-links">
+          <li>
+            <span class="contact-lbl">Email</span>
+            <a href="mailto:pranavlakhe1@gmail.com">pranavlakhe1@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-lbl">GitHub</span>
+            <a href="https://github.com/Pranavv28" target="_blank" rel="noopener noreferrer">github.com/Pranavv28</a>
+          </li>
+          <li>
+            <span class="contact-lbl">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/pranav-lakhe" target="_blank"
+              rel="noopener noreferrer">linkedin.com/in/pranav-lakhe</a>
+          </li>
+          <li>
+            <span class="contact-lbl">Location</span>
+            <span>Nagpur, Maharashtra, India</span>
+          </li>
+        </ul>
+      </div>
+
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <label>
+            <span>Your Name</span>
+            <input type="text" name="from_name" required placeholder="Alex Mercer" autocomplete="name">
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            <span>Email Address</span>
+            <input type="email" name="reply_to" required placeholder="alex@company.com" autocomplete="email">
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            <span>Your Message</span>
+            <textarea name="message" rows="5" required
+              placeholder="Hi Pranav, I'd like to discuss an opportunity..."></textarea>
+          </label>
+        </div>
+
+        <!-- Honeypot anti-spam field -->
+        <input type="text" name="company" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <button type="submit" class="btn light" id="sendBtn">
+          <span id="sendLabel">Send Message</span>
+          <span class="arr">→</span>
+        </button>
+
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Clean Editorial Footer -->
+  <footer class="wrap foot">
+    <div class="foot-left">
+      <span>© <span id="year">2026</span> Pranav Lakhe. All rights reserved.</span>
+      <span class="foot-sep">·</span>
+      <span>Designed with calm editorial precision.</span>
+    </div>
+    <a href="#home" class="back-to-top" id="backToTop">
+      <span>Back to top</span>
+      <span class="arr">↑</span>
+    </a>
+  </footer>
+
+  <!-- Lightbox Modal for Full Certificate Inspection -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate preview" hidden>
+    <div class="lb-inner">
+      <button class="lb-close" id="lbClose" aria-label="Close certificate lightbox">✕</button>
+      <div class="lb-header">
+        <div class="lb-header-text">
+          <h3 id="lbTitle">Certificate Preview</h3>
+          <p id="lbMeta">Issuer · Year</p>
+        </div>
+        <div class="lb-action-wrap" id="lbActionWrap" style="display: none;">
+          <a id="lbActionBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn dark lb-action-btn">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor">
+              <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.85h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75v5.29h-4z"/>
+            </svg>
+            <span id="lbActionLabel">View on LinkedIn</span>
+            <span class="arr">↗</span>
+          </a>
+        </div>
+      </div>
+      <div class="lb-img-wrap">
+        <img id="lbImg" src="" alt="Verified credential certificate preview">
+      </div>
+    </div>
+  </div>
+
+  <!-- EmailJS Library -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
+  <!-- Main Script -->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
