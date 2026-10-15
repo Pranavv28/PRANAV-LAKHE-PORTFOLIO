@@ -9,7 +9,7 @@
 
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-  
+
   const $ = (selector, parent = document) => parent.querySelector(selector);
   const $$ = (selector, parent = document) => [...parent.querySelectorAll(selector)];
 
@@ -17,18 +17,18 @@
    * 1. CONFIGURATION: EmailJS & Themes
    * ----------------------------------------------------------- */
   const EMAILJS_CONFIG = {
-    publicKey:  'YOUR_PUBLIC_KEY',   // Replace with your EmailJS Public Key
-    serviceId:  'YOUR_SERVICE_ID',   // Replace with your EmailJS Service ID
+    publicKey: 'YOUR_PUBLIC_KEY',   // Replace with your EmailJS Public Key
+    serviceId: 'YOUR_SERVICE_ID',   // Replace with your EmailJS Service ID
     templateId: 'YOUR_TEMPLATE_ID'   // Replace with your EmailJS Template ID
   };
 
   const THEMES = [
     { id: 'emerald', name: 'Quantum Emerald', desc: 'Mint & Sage', swatch: '#A7F3D0' },
-    { id: 'pearl',   name: 'Minimal Pearl',   desc: 'Pure Silk',   swatch: '#E4E4E7' },
-    { id: 'violet',  name: 'Plasma Violet',  desc: 'Lavender Aura', swatch: '#DDD6FE' },
-    { id: 'amber',   name: 'Solar Amber',    desc: 'Golden Hour', swatch: '#FDE68A' },
-    { id: 'cyan',    name: 'Arctic Cyan',    desc: 'Glacial Breeze', swatch: '#BAE6FD' },
-    { id: 'rose',    name: 'Sunset Rose',    desc: 'Cashmere Peach', swatch: '#FECDD3' }
+    { id: 'pearl', name: 'Minimal Pearl', desc: 'Pure Silk', swatch: '#E4E4E7' },
+    { id: 'violet', name: 'Plasma Violet', desc: 'Lavender Aura', swatch: '#DDD6FE' },
+    { id: 'amber', name: 'Solar Amber', desc: 'Golden Hour', swatch: '#FDE68A' },
+    { id: 'cyan', name: 'Arctic Cyan', desc: 'Glacial Breeze', swatch: '#BAE6FD' },
+    { id: 'rose', name: 'Sunset Rose', desc: 'Cashmere Peach', swatch: '#FECDD3' }
   ];
 
   // Set current year in footer
@@ -223,7 +223,7 @@
     const docEl = document.documentElement;
     const scrollTop = docEl.scrollTop || document.body.scrollTop;
     const scrollHeight = docEl.scrollHeight - docEl.clientHeight;
-    
+
     // Update progress bar
     if (progressBar && scrollHeight > 0) {
       const progress = (scrollTop / scrollHeight) * 100;
@@ -663,8 +663,8 @@
   const sendLabel = $('#sendLabel');
 
   const isEmailJsConfigured = EMAILJS_CONFIG.publicKey !== 'YOUR_PUBLIC_KEY' &&
-                              EMAILJS_CONFIG.serviceId !== 'YOUR_SERVICE_ID' &&
-                              EMAILJS_CONFIG.templateId !== 'YOUR_TEMPLATE_ID';
+    EMAILJS_CONFIG.serviceId !== 'YOUR_SERVICE_ID' &&
+    EMAILJS_CONFIG.templateId !== 'YOUR_TEMPLATE_ID';
 
   if (isEmailJsConfigured && window.emailjs) {
     window.emailjs.init({ publicKey: EMAILJS_CONFIG.publicKey });
